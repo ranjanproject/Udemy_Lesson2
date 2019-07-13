@@ -1,29 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
 
-    <TextView
-            android:text="@string/pratik_ranjan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/myName"
-            style="@style/nameStyle"/>
-    <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            style="@style/nameStyle"
-            android:id="@+id/nickName"
-            android:hint="@string/write_your_name" android:autofillHints=""/>
-    
-    <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/btn_star_big_on"
-            android:id="@+id/star"
-            style="@style/nameStyle"
-            android:contentDescription="@string/todo"/>
-</LinearLayout>
+        <TextView
+                android:text="@string/pratik_ranjan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/myName"
+                style="@style/nameStyle"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/myText"
+                android:hint="@string/write_your_name"
+                android:textAlignment="center"
+                android:autofillHints=""
+                style="@style/nameStyle"
+                tools:targetApi="o" android:textColor="@color/colorAccent"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:id="@+id/star"
+                style="@style/nameStyle"
+                android:contentDescription="@string/todo"/>
+        <Button
+                android:text="@string/done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/roboto_thin"
+                android:id="@+id/button" android:background="#2155F3" android:textColor="#F3F5F5"/>
+        <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/nameStyle"
+                android:id="@+id/show" android:visibility="gone"/>
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:text="@string/scText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scTextId"
+                    style="@style/nameStyle" android:textColor="@color/colorAccent"/>
+
+        </ScrollView>
+    </LinearLayout>
+</layout>
