@@ -16,7 +16,9 @@
             android:inputType="textPersonName"
             android:ems="10"
             style="@style/nameStyle"
-            android:id="@+id/nickName" android:autofillHints="" android:hint="@string/write_nick_name"/>
+            android:id="@+id/nickName"
+            android:hint="@string/write_your_name" android:autofillHints=""/>
+    
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
