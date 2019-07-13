@@ -10,6 +10,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/myName"
             style="@style/nameStyle"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            style="@style/nameStyle"
+            android:id="@+id/nickName" android:autofillHints="" android:hint="@string/write_nick_name"/>
     <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
