@@ -4,4 +4,23 @@
     <string name="pratik_ranjan">Pratik Ranjan</string>
     <string name="todo">TODO</string>
     <string name="write_your_name">write your name</string>
+    <string name="scText">
+        I love to be a part of learning phase. \n
+        learning android is on of the best \n
+        experiences to introduce yourself in \n
+        the technical world. \n
+        Through android application we can \n
+        increase efficiency of many works \n
+        as well as digital transactions.\n
+        Human habitation of Mumbai existed since the\n
+        Stone Age, the Kolis and Aagri(a Marathi fishing\n
+        community[1]) were the earliest known settlers of the islands.\n
+        The Maurya Empire gained control of the islands \n
+        during the 3rd century BCE and transformed it \n
+        into a centre of Buddhist culture and religion. \n
+        Later, between the 2nd century BCE and 9th century \n
+        BCE, the islands came under the control of successive\n
+
+    </string>
+    <string name="scTextId">scTextId</string>
 </resources>

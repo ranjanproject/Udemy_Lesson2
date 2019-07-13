@@ -27,4 +27,15 @@
             android:id="@+id/star"
             style="@style/nameStyle"
             android:contentDescription="@string/todo"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="@string/scText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@string/scTextId"
+                style="@style/nameStyle" android:textColor="@color/colorAccent"/>
+
+    </ScrollView>
 </LinearLayout>
