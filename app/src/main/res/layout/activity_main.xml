@@ -17,6 +17,7 @@
             android:ems="10"
             android:id="@+id/myText"
             android:hint="@string/write_your_name"
+            android:textAlignment="center"
             android:autofillHints=""
             style="@style/nameStyle"
             tools:targetApi="o" android:textColor="@color/colorAccent"/>
@@ -27,6 +28,22 @@
             android:id="@+id/star"
             style="@style/nameStyle"
             android:contentDescription="@string/todo"/>
+    <Button
+            android:text="@string/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/roboto_thin"
+            android:id="@+id/button" android:background="#2155F3" android:textColor="#F3F5F5"/>
+    <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/nameStyle"
+            android:id="@+id/show" android:visibility="gone"/>
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
