@@ -2,13 +2,17 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="newName"
+                  type="com.example.aboutme.MyName"/>
+    </data>
 <LinearLayout
               android:layout_width="match_parent"
               android:orientation="vertical"
               android:layout_height="match_parent">
 
     <TextView
-            android:text="@string/pratik_ranjan"
+            android:text="@={newName.name}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/myName"
@@ -41,10 +45,10 @@
             android:fontFamily="@font/roboto_thin"
             android:id="@+id/button" android:background="#2155F3" android:textColor="#F3F5F5"/>
     <TextView
-            android:text=""
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:text="@={newName.nickname}"
             style="@style/nameStyle"
             android:id="@+id/show" android:visibility="gone"/>
     <ScrollView

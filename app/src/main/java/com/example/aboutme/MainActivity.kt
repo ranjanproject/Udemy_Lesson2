@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    private val newName: MyName = MyName("Pratik Ranjan")
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_main)
@@ -27,6 +30,9 @@ class MainActivity : AppCompatActivity() {
 //            addText(it)
 //        }
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+
+        binding.newName = newName
+
         binding.button.setOnClickListener {
             addText(it)
         }
@@ -43,8 +49,9 @@ class MainActivity : AppCompatActivity() {
 //        show.visibility = View.VISIBLE
 
         binding.apply {
+            newName?.nickname = myText.text.toString()
             invalidateAll()
-            show.text = myText.text
+//            show.text = myText.text
             show.visibility = View.VISIBLE
         }
         //hide keyboard from UI
